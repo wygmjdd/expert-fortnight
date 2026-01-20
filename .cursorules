@@ -23,6 +23,7 @@
 - Each file should only contain one main functionality
 - Related functionality should be in the same module
 - Avoid circular imports
+- `__init__.py` files can be created for modules, but do not re-export (forward) imports in `__init__.py` files - it's unnecessary
 
 ## Testing
 - Python version: Python 3
