@@ -1,6 +1,7 @@
 # Python Code Style Rules
 
 ## Import Organization
+
 - All import statements MUST be placed at the top of the file
 - Follow PEP 8 import order: standard library -> third-party -> local modules
 - Each import statement should be on a separate line
@@ -10,6 +11,7 @@
 - Sort imports alphabetically within each group
 
 ## Code Style
+
 - Follow PEP 8 strictly
 - Use 4 spaces for indentation
 - Maximum line length: 120 characters
@@ -18,16 +20,28 @@
 - Use meaningful variable and function names
 - Two blank lines between top-level functions and classes
 - One blank line between methods inside a class
+- Overall code style should follow principles from "Clean Code" (《代码整洁之道》 by Robert C. Martin)
+
+## Comments
+
+- Comments are a last resort - code should be self-explanatory through clear naming and structure
+- Use comments only when code cannot express intent, to explain "why" rather than "what", or when legally required
+- Avoid redundant, outdated, or misleading comments
+- Good code itself is more important than extensive comments - replace comments with clear code and naming
+- Do not add comments explaining why code was modified before or after changes - such comments become outdated in later iterations and cause confusion
 
 ## File Organization
+
 - Each file should only contain one main functionality
 - Related functionality should be in the same module
 - Avoid circular imports
 - `__init__.py` files can be created for modules, but do not re-export (forward) imports in `__init__.py` files - it's unnecessary
 
 ## Testing
+
 - Python version: Python 3
 - Tests must be run in a virtual environment
 
 ## Other Rules
+
 - Do not create documentation files unless explicitly requested
